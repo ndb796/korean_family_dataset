@@ -69,3 +69,9 @@
     * (f): 46-55세
     * (g): 56-66세
     * (h): 67-80세
+
+### 데이터 전처리
+
+* "3.Age" 폴더만 확인하여 전체 데이터 세트를 다음과 같이 정리한다.
+* 속성(attribute) 목록: 'family_id', 'person_id', 'age_class', 'image_path'
+* [소스 코드](/preprocess.py)
