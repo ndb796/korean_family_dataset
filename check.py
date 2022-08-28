@@ -9,8 +9,8 @@ directories = [
 
 check = True # 친가(A) 혹은 외가(B) 한쪽에만 이미지가 있는지 여부
 for directory in directories:
-    for file in os.listdir(directory):
-        path = os.path.join(directory, file)
+    for current in os.listdir(directory):
+        path = os.path.join(directory, current)
         if path[-4:] != '.zip': # 압축 파일(.zip)이 아닌 경우(폴더인 경우)
             # 친가(A), 외가(B) 폴더명
             folder_a, folder_b = os.listdir(path)
