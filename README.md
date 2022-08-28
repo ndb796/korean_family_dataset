@@ -5,6 +5,7 @@
 ### 원본 데이터 세트 살펴 보기
 
 * [가족 관계가 알려진 얼굴 이미지 데이터 세트 링크](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=528)
+* [데이터 세트 내에 존재하는 모든 압축 파일을 해제하는 코드](/unzip.py)
 
 <pre>
 /family_dataset
@@ -34,7 +35,7 @@
 
 * 이때 각 original 폴더에 포함된 압축 파일은 다음과 같이 구성된다.
 * 각 폴더는 A(친가) 혹은 B(외가) 폴더만 존재한다.
-  * 검증 코드: 
+  * [검증 코드](/check.py)
 
 <pre>
 # 예시 폴더 구성
