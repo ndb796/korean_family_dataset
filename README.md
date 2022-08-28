@@ -4,7 +4,7 @@
 
 ### 원본 데이터 세트 살펴 보기
 
-* [가족 관계가 알려진 얼굴 이미지 데이터 세트 링크](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=528)
+* [AI Hub "가족 관계가 알려진 얼굴 이미지 데이터 세트"](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=528)
 * [데이터 세트 내에 존재하는 모든 압축 파일을 해제하는 코드](/unzip.py)
 
 <pre>
