@@ -4,6 +4,16 @@ import os
 from shutil import copyfile
 
 
+"""
+> [Function] Parse the metadata.
+* family_list = ["F0001", "F0002", ...]
+* family_to_person_map["F0001"] = ["D", "GM", "M"]
+* person_to_image_map["F0001_D"] = [
+    "F0001_AGE_D_18_a1.jpg",
+    "F0001_AGE_D_18_a2.jpg",
+    ...
+]
+"""
 def parsing(metadata):
     family_set = set()
     family_to_person_map = dict()
