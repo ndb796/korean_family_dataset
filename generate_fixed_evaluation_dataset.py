@@ -55,10 +55,12 @@ if not os.path.exists(negative_folder):
     /0
     /1
     ...
+    /4999
   /negative
     /0
     /1
     ...
+    /4999
 """
 
 total_pairs = 10000
