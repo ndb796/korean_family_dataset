@@ -113,8 +113,8 @@
 
 ### 최종적으로 전처리된 데이터 세트들
 
-* [custom_korean_family_dataset_resolution_128.zip](https://postechackr-my.sharepoint.com/:u:/g/personal/dongbinna_postech_ac_kr/EbMhBPnmIb5MutZvGicPKggBWKm5hLs0iwKfGW7_TwQIKg)
-* [custom_korean_family_dataset_resolution_256.zip](https://postechackr-my.sharepoint.com/:u:/g/personal/dongbinna_postech_ac_kr/Eb1hztk047VFk2j9bI7JKmEBtkWpABZ8vfX5_m0cdSjQHw)
+* [custom_korean_family_dataset_resolution_128.zip]
+* [custom_korean_family_dataset_resolution_256.zip]
 * 데이터 세트는 학습(training), 검증(validation), 테스트(test) 목적으로 나뉜다.
   * 학습 데이터 세트: (F0001 ~ F0299) folders have 10,025 images.
   * 검증 데이터 세트: (F0801 ~ F0850) folders have 1,539 images.
