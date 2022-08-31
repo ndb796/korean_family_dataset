@@ -72,6 +72,46 @@
 
 ### 데이터 전처리
 
-* "3.Age" 폴더만 확인하여 전체 데이터 세트를 다음과 같이 정리한다.
-* 속성(attribute) 목록: 'family_id', 'person_id', 'age_class', 'image_path'
-* [소스 코드](/preprocess.py)
+* 모든 "3.Age" 폴더만 확인하여 전체 데이터 세트를 전처리한다.
+  * [소스 코드](/preprocess.py)
+* 결과로 나오는 images 폴더는 13,068개의 이미지로 구성된다.
+<pre>
+/images
+  F0001_AGE_D_18_a1.jpg
+  F0001_AGE_D_18_a2.jpg
+  ...
+  F0900_AGE_M_57_f1.jpg
+  F0900_AGE_M_57_f2.jpg
+</pre>
+* custom_dataset.csv는 13,068개의 이미지에 대한 메타 정보를 가진다.
+  * 속성(attribute) 목록: 'family_id', 'person_id', 'age_class', 'image_path'
+
+### 이미지 크기 줄이기
+
+* 전처리된 이미지 중에는 해상도가 큰 이미지가 많다.
+* 모든 이미지를 128 X 128로 바꾼 버전과 256 X 256로 바꾼 버전을 만들 수 있다.
+* [소스 코드](/image_resizer.py)
+
+### 고정된 평가 데이터 세트 만들기
+
+* 평가를 위하여 10,000개의 (얼굴 이미지, 얼굴 이미지) 쌍을 만들 수 있다.
+  * 5,000 쌍은 가족(positive), 5,000 쌍은 비가족(negative)로 구성할 수 있다.
+* [소스 코드](/generate_fixed_evaluation_dataset.py)
+<pre>
+/fixed_val_dataset
+  /positive
+    /0
+    /1
+    ...
+    /4999
+  /negative
+    /0
+    /1
+    ...
+    /4999
+</pre>
+
+### 최종적으로 전처리된 데이터 세트들
+
+* [custom_korean_family_dataset_resolution_128.zip](https://postechackr-my.sharepoint.com/:u:/g/personal/dongbinna_postech_ac_kr/EbMhBPnmIb5MutZvGicPKggBWKm5hLs0iwKfGW7_TwQIKg)
+* [custom_korean_family_dataset_resolution_256.zip](https://postechackr-my.sharepoint.com/:u:/g/personal/dongbinna_postech_ac_kr/Eb1hztk047VFk2j9bI7JKmEBtkWpABZ8vfX5_m0cdSjQHw)
