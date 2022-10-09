@@ -120,7 +120,7 @@
   * 검증 데이터 세트: (F0801 ~ F0850) folders have 1,539 images.
   * 테스트 데이터 세트: (F0851 ~ F0900) folders have 1,504 images.
 
-### 가족 관계 예측 네트워크
+### 가족 관계 예측 네트워크 학습 예시
 
 * 기본 Siamese 네트워크 코드: [<b>링크</b>](/kinship_verification.ipynb)
 * 가중치 기반의 Siamese 네트워크 코드(테스트 정확도 <b>60.24%</b>): [<b>링크</b>](/weighted_kinship_verification.ipynb)
